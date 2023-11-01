@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Try everything in your space - WebXR</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Try everything in your space - WebXR">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+  </head>
+  <body>
+
+  <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="https://thinkuldeep.com/post/exploring-web-usb" >thinkuldeep.com</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+      </a>
+  </div>
+
+    <div>
+
+        <div>Connect the device to USB.</div>
+        <button name="Get Devices" onclick="getDevices()" >Get Devices</button>
+        <div id="device-list">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+   </body>
+</html>
